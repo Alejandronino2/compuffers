@@ -30,8 +30,8 @@ function agregarCurso(e) {
 
 function productoAgregado(curso) {
     const alert = document.createElement("H4");
-    alert.style.cssText = "background-color: red; color: white; text-align: center;";
-    alert.style.margin = "5px 20px";
+    alert.style.cssText = "background-color: #46d510; color: black; text-align: center;";
+    alert.style.margin = "0px ";
     alert.textContent = 'Añadido al carrito';
     curso.appendChild(alert);
     setTimeout(() => {
