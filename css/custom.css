@@ -79,9 +79,9 @@ header {
 
 .menu ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
