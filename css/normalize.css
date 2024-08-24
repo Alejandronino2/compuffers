@@ -1,5 +1,5 @@
 html {
- 
+
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -97,11 +97,56 @@ sub {
 img {
   width: 80%;
   margin-top: 10px;
+  margin-left: 20px;
 }
+
+.estrellas {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+#img-logo {
+  width: 40%;
+  margin-top: 5%;
+  max-width: 200px;
+  height: auto;
+}
+
 #img-carrito {
-  width:20%;
-  margin-top: 15px;
+  width: 20px !important;
+  max-width: 50px;
+  height: auto;
+  float: right;
+  margin-top: 5%;
 }
+
+@media (max-width: 768px) {
+  #img-logo {
+    width: 80%;
+    margin-top: 10%;
+    max-width: 150px;
+  }
+
+  #img-carrito {
+    width: 20%;
+    max-width: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #img-logo {
+    width: 50%;
+    max-width: 250px;
+  }
+
+  #img-carrito {
+    width: 8%;
+    max-width: 60px;
+  }
+}
+
+
 
 svg:not(:root) {
   overflow: hidden;
@@ -221,4 +266,117 @@ table {
 td,
 th {
   padding: 0;
+}
+
+
+
+.footer-32892 {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  color: #333;
+
+}
+
+
+.site-section {
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+
+.footer-col {
+  flex: 1;
+  padding: 15px;
+}
+
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p.mb-4 {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+.list-unstyled a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.list-unstyled a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe input.form-control {
+  flex: 1;
+  padding: 10px;
+}
+
+.subscribe input.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.subscribe input.btn-submit:hover {
+  background-color: #0056b3;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.list-unstyled a[href^="https://api.whatsapp.com/"] {
+  color: #25D366;
+}
+
+
+.list-unstyled a[href^="http://www.compuoffers.com"] {
+  color: #007bff;
 }

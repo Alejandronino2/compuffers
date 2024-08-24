@@ -103,3 +103,35 @@ function limpiarHTML() {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('subscribe-form');
+    const emailInput = document.getElementById('email');
+    const errorMessage = document.getElementById('error-message');
+    const successMessage = document.getElementById('success-message');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+
+        errorMessage.textContent = '';
+        successMessage.textContent = '';
+
+        const emailValue = emailInput.value.trim();
+
+        if (emailValue === '') {
+            errorMessage.textContent = 'El campo de correo electrónico no puede estar vacío.';
+            return;
+        }
+
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailValue)) {
+            errorMessage.textContent = 'Por favor, ingresa un correo electrónico válido.';
+            return;
+        }
+
+        successMessage.textContent = '¡Correo electrónico enviado exitosamente!';
+
+    });
+});
