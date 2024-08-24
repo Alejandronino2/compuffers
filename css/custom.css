@@ -350,15 +350,14 @@ header {
 
 .footer {
     margin-top: 40px;
-    border-top: 1px solid #aaa;
-    ;
+    border-top: 1px solid #aaa;;
     padding-top: 40px;
 }
 
 .footer .menu a {
     display: block;
     margin-bottom: 10px;
-    text-decoration: none;
+    text-decoration: left;
 }
 
 .error-message {
@@ -403,16 +402,6 @@ header {
     color: #555;
 }
 
-.info-card .estrellas {
-    margin-top: 10px;
-}
 
-@media (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-    .four.columns {
-        width: 100%;
-    }
-}
+
+

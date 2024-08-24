@@ -274,6 +274,7 @@ th {
   background-color: #f8f9fa;
   padding: 40px 0;
   color: #333;
+  float: center;
 
 }
 
@@ -353,7 +354,7 @@ p.mb-4 {
   background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 0px 20px;
+  padding: 0px 10px;
   cursor: pointer;
 }
 
@@ -367,10 +368,11 @@ p.mb-4 {
 }
 
 .gallery img {
-  width: 100%;
+  width: 20%;
   height: auto;
   display: block;
 }
+
 
 .list-unstyled a[href^="https://api.whatsapp.com/"] {
   color: #25D366;
