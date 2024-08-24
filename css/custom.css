@@ -370,3 +370,49 @@ header {
     color: green;
     font-size: 14px;
 }
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-curso {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.info-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-card h4 {
+    margin: 10px 0;
+}
+
+.info-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.info-card .estrellas {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .four.columns {
+        width: 100%;
+    }
+}
